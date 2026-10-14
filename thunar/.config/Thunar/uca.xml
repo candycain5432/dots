@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Written by theme_manager.py, from `./setup thunar`. -->
+<!-- Anything added here by hand is lost on the next one. -->
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>impasto-terminal</unique-id>
+	<command>kitty --working-directory %f</command>
+	<description>Open kitty in this folder</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>folder-open</icon>
+	<name>Open yazi Here</name>
+	<submenu></submenu>
+	<unique-id>impasto-yazi</unique-id>
+	<command>kitty --working-directory %f yazi</command>
+	<description>Open this folder in yazi</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>accessories-text-editor</icon>
+	<name>Open in the Editor</name>
+	<submenu></submenu>
+	<unique-id>impasto-editor</unique-id>
+	<command>codium %F</command>
+	<description>Open in VSCodium</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<text-files/>
+	<other-files/>
+</action>
+<action>
+	<icon>preferences-desktop-wallpaper</icon>
+	<name>Set as Wallpaper</name>
+	<submenu></submenu>
+	<unique-id>impasto-wallpaper</unique-id>
+	<command>qs ipc call wallpaper set %f</command>
+	<description>Use this picture or video as the wallpaper and theme the desktop from it</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<image-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>edit-copy</icon>
+	<name>Copy Path</name>
+	<submenu></submenu>
+	<unique-id>impasto-copy-path</unique-id>
+	<command>sh -c 'printf %s "$1" | wl-copy' impasto %f</command>
+	<description>Copy the full path of the selection to the clipboard</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

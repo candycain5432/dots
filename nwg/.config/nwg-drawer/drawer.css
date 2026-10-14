@@ -1,0 +1,59 @@
+/* nwg-drawer - Crimson Temple
+ * Location: ~/.config/nwg-drawer/drawer.css
+ */
+
+window {
+    background-color: rgba(19, 19, 20, 0.88);
+    color: #d8d4ce;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+
+/* Search box */
+entry {
+    background-color: #1d2224;
+    color: #d8d4ce;
+    border: 1px solid #2c3335;
+    border-radius: 12px;
+    padding: 8px 14px;
+    caret-color: #e9445e;
+}
+
+entry:focus {
+    border-color: #e9445e;
+}
+
+/* App buttons */
+button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #d8d4ce;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+button:hover,
+button:focus {
+    background-color: rgba(92, 15, 42, 0.75);   /* wine */
+}
+
+/* Category row, pinned apps, and the calculator line */
+#category-button {
+    margin: 0 8px;
+    padding: 4px 12px;
+}
+
+#category-button:hover {
+    background-color: rgba(92, 15, 42, 0.75);
+}
+
+#math-label {
+    color: #e9445e;
+    font-size: 20px;
+}
+
+#hint-label,
+#description {
+    color: #8a8681;   /* muted */
+}

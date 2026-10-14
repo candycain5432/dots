@@ -1,0 +1,79 @@
+/* nwg-dock-hyprland - Crimson Temple v2
+ * Location: ~/.config/nwg-dock-hyprland/style.css
+ * Palette roles match palette.lua:
+ *   bg #131314  surface #1d2224  overlay #2c3335  fg #d8d4ce  muted #8a8681
+ *   accent #e9445e  accent_dark #b11d43  wine #5c0f2a
+ */
+
+/* The window stays invisible; the pill below is what you see */
+window {
+    background: transparent;
+    border: none;
+}
+
+/* The floating pill: dark glass, hairline border, light top edge, big soft shadow */
+#inner-box {
+    background: rgba(19, 19, 20, 0.80);
+    border: 1px solid rgba(44, 51, 53, 0.95);
+    border-radius: 22px;
+    padding: 8px 12px;
+    box-shadow:
+        inset 0 1px 0 rgba(216, 212, 206, 0.06),
+        0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+/* Reset toolkit defaults so only our rules apply */
+button, image {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #d8d4ce;
+}
+
+/* Every icon button: roomy hit area, rounded, smooth transitions */
+button {
+    padding: 8px;
+    margin: 0 4px;
+    border-radius: 16px;
+    transition: all 150ms ease;
+}
+
+/* Hover: wine glow fading from the top */
+button:hover {
+    background: linear-gradient(
+        to bottom,
+        rgba(92, 15, 42, 0.90),
+        rgba(92, 15, 42, 0.35)
+    );
+    box-shadow: 0 4px 14px rgba(92, 15, 42, 0.55);
+}
+
+/* Click feedback */
+button:active {
+    background: rgba(177, 29, 67, 0.80);
+}
+
+/* Focused app: soft crimson wash + glowing underline */
+#active {
+    background: linear-gradient(
+        to bottom,
+        rgba(233, 68, 94, 0.06),
+        rgba(233, 68, 94, 0.20)
+    );
+    border-bottom: 2px solid #e9445e;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px -6px rgba(233, 68, 94, 0.70);
+}
+
+/* Tooltips: match the theme instead of default grey */
+tooltip {
+    background: #1d2224;
+    border: 1px solid #2c3335;
+    border-radius: 10px;
+    color: #d8d4ce;
+}
+
+tooltip label {
+    color: #d8d4ce;
+    padding: 2px 6px;
+}
