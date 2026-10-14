@@ -1,4 +1,6 @@
-# dots
+# Dots
+
+![alt text](Impasto.png "Title")
 
 My Arch Linux rice: **Hyprland** (Lua config) + **Quickshell**, built on top of
 [impasto](https://github.com/andreumassanet/impasto). The whole desktop
